@@ -1,0 +1,49 @@
+\doxysection{Robot\+Interface.\+h}
+\hypertarget{_robot_interface_8h_source}{}\label{_robot_interface_8h_source}\mbox{\hyperlink{_robot_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ @author\ Ozge\ Erarslan}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ @contact\ 152120221095@ogrenci.ogu.edu.tr}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*\ @date\ December\ 24,\ 2024}}
+\DoxyCodeLine{00004\ \textcolor{comment}{*\ }}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ @class\ RobotInterface}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ @brief\ Interface\ class\ for\ controlling\ a\ robot's\ movement\ and\ connection\ status.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ ROBOT\_INTERFACE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ROBOT\_INTERFACE\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pose_8h}{Pose.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_robot_interface}{RobotInterface}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}*\ \mbox{\hyperlink{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b}{position}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_interface_afe3602347cb98f44d206b3143c3157ef}{connectionStatus}};\ \ \ \ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Constructor\ and\ Destructor}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_robot_interface_a385c5ee7a52282ab054191bfac9d5453}{RobotInterface}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_robot_interface_a66b502300e773278b531ad74b83fd78d}{\string~RobotInterface}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Movement\ methods}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a7bb498e78f25da8f9dcce3802be3ab00}{turnLeft}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a6b65eca376374dc4b6133835bd9a56a3}{turnRight}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_aa91852875e0f188d0f17b67b09b1f554}{moveForward}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a9dc95f761a9f221701127e671016e168}{moveBackward}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a817e7914a382e1310633a4bc5e92f998}{moveLeft}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a192233af22a45099b6e8c735ebc9497d}{moveRight}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_aaa0181d92296347b3e1092e93f831c28}{stop}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Getter\ for\ position}}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_robot_interface_af5090befb1025af4e8971479efb23d25}{getPose}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Utility\ methods}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_interface_a7d5eb639471127aea65f96b9546c3a96}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Connection\ methods}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_interface_a7dc50b9b2033c17993b932ce6feb9033}{connectRobot}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_interface_a5b67fa1caec4ccabc928c867343e0c11}{disconnectRobot}}();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ROBOT\_INTERFACE\_H}}
+
+\end{DoxyCode}

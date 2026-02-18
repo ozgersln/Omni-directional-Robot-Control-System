@@ -1,0 +1,82 @@
+\doxysection{IRSensor Class Reference}
+\hypertarget{class_i_r_sensor}{}\label{class_i_r_sensor}\index{IRSensor@{IRSensor}}
+
+
+{\ttfamily \#include $<$IRSensor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683}{IRSensor}} (\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}api)
+\item 
+virtual \mbox{\hyperlink{class_i_r_sensor_aa536fc909b795cfa34b33fa37ef127ef}{\texorpdfstring{$\sim$}{\string~}\+IRSensor}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_i_r_sensor_a8cc5db0cfe3c2cad7cb58f67a086ca51}{update}} ()
+\item 
+virtual double \mbox{\hyperlink{class_i_r_sensor_ad454b7bd2c565a1e15f1d07d57213686}{get\+Range}} (int index)
+\item 
+virtual double \mbox{\hyperlink{class_i_r_sensor_a30150865b3ddf498610aabd72de935b8}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_i_r_sensor_a85a32b4aac3527428a843a01bb60d23c}{robot\+API}}
+\item 
+double \mbox{\hyperlink{class_i_r_sensor_a86f315848c5136b6a74a158bd61c2659}{ranges}} \mbox{[}9\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683}\index{IRSensor@{IRSensor}!IRSensor@{IRSensor}}
+\index{IRSensor@{IRSensor}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{IRSensor()}{IRSensor()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683} 
+IRSensor\+::\+IRSensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}}]{api}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_i_r_sensor_aa536fc909b795cfa34b33fa37ef127ef}\index{IRSensor@{IRSensor}!````~IRSensor@{\texorpdfstring{$\sim$}{\string~}IRSensor}}
+\index{````~IRSensor@{\texorpdfstring{$\sim$}{\string~}IRSensor}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IRSensor()}{\string~IRSensor()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_aa536fc909b795cfa34b33fa37ef127ef} 
+virtual IRSensor\+::\texorpdfstring{$\sim$}{\string~}\+IRSensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_r_sensor_ad454b7bd2c565a1e15f1d07d57213686}\index{IRSensor@{IRSensor}!getRange@{getRange}}
+\index{getRange@{getRange}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_ad454b7bd2c565a1e15f1d07d57213686} 
+virtual double IRSensor\+::get\+Range (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\Hypertarget{class_i_r_sensor_a30150865b3ddf498610aabd72de935b8}\index{IRSensor@{IRSensor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a30150865b3ddf498610aabd72de935b8} 
+virtual double IRSensor\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\Hypertarget{class_i_r_sensor_a8cc5db0cfe3c2cad7cb58f67a086ca51}\index{IRSensor@{IRSensor}!update@{update}}
+\index{update@{update}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a8cc5db0cfe3c2cad7cb58f67a086ca51} 
+virtual void IRSensor\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_i_r_sensor_a86f315848c5136b6a74a158bd61c2659}\index{IRSensor@{IRSensor}!ranges@{ranges}}
+\index{ranges@{ranges}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{ranges}{ranges}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a86f315848c5136b6a74a158bd61c2659} 
+double IRSensor\+::ranges\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_i_r_sensor_a85a32b4aac3527428a843a01bb60d23c}\index{IRSensor@{IRSensor}!robotAPI@{robotAPI}}
+\index{robotAPI@{robotAPI}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{robotAPI}{robotAPI}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a85a32b4aac3527428a843a01bb60d23c} 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}}\texorpdfstring{$\ast$}{*} IRSensor\+::robot\+API\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.\+h}}\end{DoxyCompactItemize}

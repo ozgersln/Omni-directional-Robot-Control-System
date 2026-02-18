@@ -1,0 +1,92 @@
+\doxysection{Motion\+Menu Class Reference}
+\hypertarget{class_motion_menu}{}\label{class_motion_menu}\index{MotionMenu@{MotionMenu}}
+
+
+Manages a menu interface for controlling the robot\textquotesingle{}s motions and navigation.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Menu.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motion_menu_ac8ec409f84c7d36e6e01cf5db6a953ec}{Motion\+Menu}} (\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}control, \mbox{\hyperlink{class_safe_navigation}{Safe\+Navigation}} \texorpdfstring{$\ast$}{*}safe\+Nav, int Choice)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_motion_menu}{Motion\+Menu} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_motion_menu_a497884ff7b2d806d63540f2b51672f4e}{\texorpdfstring{$\sim$}{\string~}\+Motion\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_motion_menu}{Motion\+Menu} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_menu_abd547e49f33a469b20008eb97824133e}{show\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the motion menu and allows the user to select commands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_menu_adbbd0a3ba642331f5c8c741e584ab39b}{Execute\+Choice}} ()
+\begin{DoxyCompactList}\small\item\em Executes the selected menu option to control the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a menu interface for controlling the robot\textquotesingle{}s motions and navigation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_motion_menu_ac8ec409f84c7d36e6e01cf5db6a953ec}\index{MotionMenu@{MotionMenu}!MotionMenu@{MotionMenu}}
+\index{MotionMenu@{MotionMenu}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{MotionMenu()}{MotionMenu()}}
+{\footnotesize\ttfamily \label{class_motion_menu_ac8ec409f84c7d36e6e01cf5db6a953ec} 
+Motion\+Menu\+::\+Motion\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}}]{control}{, }\item[{\mbox{\hyperlink{class_safe_navigation}{Safe\+Navigation}} \texorpdfstring{$\ast$}{*}}]{safe\+Nav}{, }\item[{int}]{Choice}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_motion_menu}{Motion\+Menu} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & Pointer to the \doxylink{class_robot_controler}{Robot\+Controler} object. \\
+\hline
+{\em safe\+Nav} & Pointer to the \doxylink{class_safe_navigation}{Safe\+Navigation} object. \\
+\hline
+{\em Choice} & Initial choice for the menu.\\
+\hline
+{\em control} & Pointer to the \doxylink{class_robot_controler}{Robot\+Controler} object. \\
+\hline
+{\em safe\+Nav} & Pointer to the \doxylink{class_safe_navigation}{Safe\+Navigation} object. \\
+\hline
+{\em Choice} & Initial menu choice. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_motion_menu_a497884ff7b2d806d63540f2b51672f4e}\index{MotionMenu@{MotionMenu}!````~MotionMenu@{\texorpdfstring{$\sim$}{\string~}MotionMenu}}
+\index{````~MotionMenu@{\texorpdfstring{$\sim$}{\string~}MotionMenu}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MotionMenu()}{\string~MotionMenu()}}
+{\footnotesize\ttfamily \label{class_motion_menu_a497884ff7b2d806d63540f2b51672f4e} 
+Motion\+Menu\+::\texorpdfstring{$\sim$}{\string~}\+Motion\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_motion_menu}{Motion\+Menu} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_motion_menu_adbbd0a3ba642331f5c8c741e584ab39b}\index{MotionMenu@{MotionMenu}!ExecuteChoice@{ExecuteChoice}}
+\index{ExecuteChoice@{ExecuteChoice}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{ExecuteChoice()}{ExecuteChoice()}}
+{\footnotesize\ttfamily \label{class_motion_menu_adbbd0a3ba642331f5c8c741e584ab39b} 
+void Motion\+Menu\+::\+Execute\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executes the selected menu option to control the robot. 
+
+Executes the selected motion command based on the user\textquotesingle{}s choice. \Hypertarget{class_motion_menu_abd547e49f33a469b20008eb97824133e}\index{MotionMenu@{MotionMenu}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily \label{class_motion_menu_abd547e49f33a469b20008eb97824133e} 
+void Motion\+Menu\+::show\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the motion menu and allows the user to select commands. 
+
+Displays the motion menu and processes user input for motion commands. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_motion_menu_8h}{Motion\+Menu.\+h}}\item 
+\mbox{\hyperlink{_motion_menu_8cpp}{Motion\+Menu.\+cpp}}\end{DoxyCompactItemize}

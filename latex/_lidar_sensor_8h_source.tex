@@ -1,0 +1,54 @@
+\doxysection{Lidar\+Sensor.\+h}
+\hypertarget{_lidar_sensor_8h_source}{}\label{_lidar_sensor_8h_source}\mbox{\hyperlink{_lidar_sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ LidarSensor.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*\ author\ Elif\ Fatma\ Cebeci\ (152120221123@ogrenci.ogu.edu.tr)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{*\ date:\ December,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ LIDARSENSOR\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ LIDARSENSOR\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_festo_robot_a_p_i_8h}{FestoRobotAPI.h}}"{}}\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}*\ ranges;\ \ \textcolor{comment}{//\ Array\ to\ hold\ the\ range\ data}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;\ \ \textcolor{comment}{//\ Pointer\ to\ the\ robot\ API}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ rangeNumber;\ \ \textcolor{comment}{//\ Number\ of\ range\ data\ points}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor_a434399185e14f697691cbf735d74ad65}{LidarSensor}}(\mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Destructor}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor_a6d31a7a0cfd7438217d259edd875b9a6}{\string~LidarSensor}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ range\ at\ the\ specified\ index}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_a694e7287bd7deee160bbed768c42a91b}{getRange}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Finds\ and\ returns\ the\ maximum\ range\ and\ its\ index}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_aa29608884ed48c65f7832048208ee128}{getMax}}(\textcolor{keywordtype}{int}\&\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Finds\ and\ returns\ the\ minimum\ range\ and\ its\ index}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_addda17d8fbf2c3e3c5375ab97c4bd986}{getMin}}(\textcolor{keywordtype}{int}\&\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Updates\ the\ range\ data\ from\ the\ Lidar\ sensor}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lidar_sensor_ae4c3fae33f0a62ee1ebac2decaa683c2}{update}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Overloads\ the\ []\ operator\ to\ return\ the\ range\ at\ a\ specified\ index}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_a51f691c7842221ad869ce46cb98d0a5d}{operator[]}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Calculates\ and\ returns\ the\ angle\ for\ a\ given\ index}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_ac27e5edca99baeac22b33be4cc5d18ae}{getAngle}}(\textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ number\ of\ ranges\ from\ the\ Lidar\ sensor}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lidar_sensor_a384475994f5935405c3218cc7565c1aa}{getRangeNum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//LIDARSENSOR\_H}}
+
+\end{DoxyCode}

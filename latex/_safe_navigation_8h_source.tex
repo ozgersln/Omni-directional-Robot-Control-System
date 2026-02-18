@@ -1,0 +1,49 @@
+\doxysection{Safe\+Navigation.\+h}
+\hypertarget{_safe_navigation_8h_source}{}\label{_safe_navigation_8h_source}\mbox{\hyperlink{_safe_navigation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ SafeNavigation.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*\ author\ Pariya\ Jahanbakhsh\ (152120231154@ogrenci.ogu.edu.tr)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{*\ date:\ december,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SAFENAVIGATION\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SAFENAVIGATION\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_controler_8h}{RobotControler.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_safe_navigation}{SafeNavigation}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Enum\ to\ track\ the\ state\ of\ the\ robot}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9cae4a01d3b829c9f0d64fe2adc9f6cd1ef}{STOP}},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9ca3f5fbbd470608f4ebd426873a7c35963}{MOVING}}}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_aa4b24dab65ca53842a4094a784538c86}{SafeNavigation}}(\mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ rc,\ \mbox{\hyperlink{class_i_r_sensor}{IRSensor}}*\ ir);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Function\ to\ check\ if\ an\ obstacle\ is\ detected}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_safe_navigation_a372905484ef8b095dd570a7d5a816f55}{isObstacleDetected}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Function\ to\ move\ the\ robot\ forward\ safely}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}{moveForwardSafe}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Function\ to\ move\ the\ robot\ backward\ safely}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}{moveBackwardSafe}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Getter\ for\ the\ current\ state\ of\ the\ robot}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}}\ \mbox{\hyperlink{class_safe_navigation_ac793106134c69b14e1c9d0e5416c150b}{getState}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ controller;}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_i_r_sensor}{IRSensor}}*\ irSensor;}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}}\ state;\ \textcolor{comment}{//\ The\ state\ of\ the\ robot\ (STOP\ or\ MOVING)}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SAFENAVIGATION\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,86 @@
+\doxysection{Safe\+Navigation Class Reference}
+\hypertarget{class_safe_navigation}{}\label{class_safe_navigation}\index{SafeNavigation@{SafeNavigation}}
+
+
+{\ttfamily \#include $<$Safe\+Navigation.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}} \{ \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9cae4a01d3b829c9f0d64fe2adc9f6cd1ef}{STOP}}
+, \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9ca3f5fbbd470608f4ebd426873a7c35963}{MOVING}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_safe_navigation_aa4b24dab65ca53842a4094a784538c86}{Safe\+Navigation}} (\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}rc, \mbox{\hyperlink{class_i_r_sensor}{IRSensor}} \texorpdfstring{$\ast$}{*}ir)
+\item 
+bool \mbox{\hyperlink{class_safe_navigation_a372905484ef8b095dd570a7d5a816f55}{is\+Obstacle\+Detected}} ()
+\item 
+void \mbox{\hyperlink{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}{move\+Forward\+Safe}} ()
+\item 
+void \mbox{\hyperlink{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}{move\+Backward\+Safe}} ()
+\item 
+\mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}} \mbox{\hyperlink{class_safe_navigation_ac793106134c69b14e1c9d0e5416c150b}{get\+State}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}\index{SafeNavigation@{SafeNavigation}!State@{State}}
+\index{State@{State}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c} 
+enum \mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{Safe\+Navigation\+::\+State}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STOP@{STOP}!SafeNavigation@{SafeNavigation}}\index{SafeNavigation@{SafeNavigation}!STOP@{STOP}}}\Hypertarget{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9cae4a01d3b829c9f0d64fe2adc9f6cd1ef}\label{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c} 
+STOP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING@{MOVING}!SafeNavigation@{SafeNavigation}}\index{SafeNavigation@{SafeNavigation}!MOVING@{MOVING}}}\Hypertarget{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9ca3f5fbbd470608f4ebd426873a7c35963}\label{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c} 
+MOVING&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_safe_navigation_aa4b24dab65ca53842a4094a784538c86}\index{SafeNavigation@{SafeNavigation}!SafeNavigation@{SafeNavigation}}
+\index{SafeNavigation@{SafeNavigation}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{SafeNavigation()}{SafeNavigation()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_aa4b24dab65ca53842a4094a784538c86} 
+Safe\+Navigation\+::\+Safe\+Navigation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}}]{rc}{, }\item[{\mbox{\hyperlink{class_i_r_sensor}{IRSensor}} \texorpdfstring{$\ast$}{*}}]{ir}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_safe_navigation_ac793106134c69b14e1c9d0e5416c150b}\index{SafeNavigation@{SafeNavigation}!getState@{getState}}
+\index{getState@{getState}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_ac793106134c69b14e1c9d0e5416c150b} 
+\mbox{\hyperlink{class_safe_navigation_a74c25c22ecb3f2674e9c836dd0a66b9c}{State}} Safe\+Navigation\+::get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_safe_navigation_a372905484ef8b095dd570a7d5a816f55}\index{SafeNavigation@{SafeNavigation}!isObstacleDetected@{isObstacleDetected}}
+\index{isObstacleDetected@{isObstacleDetected}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{isObstacleDetected()}{isObstacleDetected()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a372905484ef8b095dd570a7d5a816f55} 
+bool Safe\+Navigation\+::is\+Obstacle\+Detected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}\index{SafeNavigation@{SafeNavigation}!moveBackwardSafe@{moveBackwardSafe}}
+\index{moveBackwardSafe@{moveBackwardSafe}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{moveBackwardSafe()}{moveBackwardSafe()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3} 
+void Safe\+Navigation\+::move\+Backward\+Safe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}\index{SafeNavigation@{SafeNavigation}!moveForwardSafe@{moveForwardSafe}}
+\index{moveForwardSafe@{moveForwardSafe}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{moveForwardSafe()}{moveForwardSafe()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3} 
+void Safe\+Navigation\+::move\+Forward\+Safe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_safe_navigation_8h}{Safe\+Navigation.\+h}}\end{DoxyCompactItemize}

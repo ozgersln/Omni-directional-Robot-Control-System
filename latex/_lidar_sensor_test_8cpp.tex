@@ -1,0 +1,68 @@
+\doxysection{Lidar\+Sensor\+Test.\+cpp File Reference}
+\hypertarget{_lidar_sensor_test_8cpp}{}\label{_lidar_sensor_test_8cpp}\index{LidarSensorTest.cpp@{LidarSensorTest.cpp}}
+
+
+Application for testing the operation of the Lidar sensor.  
+
+
+{\ttfamily \#include "{}Festo\+Robot\+API.\+h"{}}\newline
+{\ttfamily \#include "{}Lidar\+Sensor.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_lidar_sensor_test_8cpp_a388f572c62279f839ee138a9afbdeeb5}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints Lidar sensor data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_lidar_sensor_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function. Moves the robot and retrieves Lidar sensor data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_lidar_sensor_test_8cpp_ae4a301e50a4948ce5b3558e4cf487103}{robotino}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Application for testing the operation of the Lidar sensor. 
+
+This application communicates with the robot, collects data from the Lidar sensor, and prints sensor data while the robot moves in various directions. \begin{DoxyAuthor}{Author}
+Elif Fatma Cebeci 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_lidar_sensor_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{LidarSensorTest.cpp@{LidarSensorTest.cpp}!main@{main}}
+\index{main@{main}!LidarSensorTest.cpp@{LidarSensorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_lidar_sensor_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main function. Moves the robot and retrieves Lidar sensor data. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 to indicate successful program execution. 
+\end{DoxyReturn}
+\Hypertarget{_lidar_sensor_test_8cpp_a388f572c62279f839ee138a9afbdeeb5}\index{LidarSensorTest.cpp@{LidarSensorTest.cpp}!print@{print}}
+\index{print@{print}!LidarSensorTest.cpp@{LidarSensorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{_lidar_sensor_test_8cpp_a388f572c62279f839ee138a9afbdeeb5} 
+void print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints Lidar sensor data. 
+
+Collects the smallest and largest values, their indices, and the corresponding angles and distances from the Lidar sensor, and prints them to the console. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_lidar_sensor_test_8cpp_ae4a301e50a4948ce5b3558e4cf487103}\index{LidarSensorTest.cpp@{LidarSensorTest.cpp}!robotino@{robotino}}
+\index{robotino@{robotino}!LidarSensorTest.cpp@{LidarSensorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{robotino}{robotino}}
+{\footnotesize\ttfamily \label{_lidar_sensor_test_8cpp_ae4a301e50a4948ce5b3558e4cf487103} 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}}\texorpdfstring{$\ast$}{*} robotino}
+

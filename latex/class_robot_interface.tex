@@ -1,0 +1,216 @@
+\doxysection{Robot\+Interface Class Reference}
+\hypertarget{class_robot_interface}{}\label{class_robot_interface}\index{RobotInterface@{RobotInterface}}
+
+
+{\ttfamily \#include $<$Robot\+Interface.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_robot_interface_a385c5ee7a52282ab054191bfac9d5453}{Robot\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_robot_interface}{Robot\+Interface}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_robot_interface_a66b502300e773278b531ad74b83fd78d}{\texorpdfstring{$\sim$}{\string~}\+Robot\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_robot_interface}{Robot\+Interface}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a7bb498e78f25da8f9dcce3802be3ab00}{turn\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Turns the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a6b65eca376374dc4b6133835bd9a56a3}{turn\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Turns the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_aa91852875e0f188d0f17b67b09b1f554}{move\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot forward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a9dc95f761a9f221701127e671016e168}{move\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot backward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a817e7914a382e1310633a4bc5e92f998}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a192233af22a45099b6e8c735ebc9497d}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_aaa0181d92296347b3e1092e93f831c28}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the robot\textquotesingle{}s movement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_robot_interface_af5090befb1025af4e8971479efb23d25}{get\+Pose}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current position of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_interface_a7d5eb639471127aea65f96b9546c3a96}{print}} () const
+\begin{DoxyCompactList}\small\item\em Prints the robot\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_interface_a7dc50b9b2033c17993b932ce6feb9033}{connect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em Connects the robot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_interface_a5b67fa1caec4ccabc928c867343e0c11}{disconnect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b}{position}}
+\begin{DoxyCompactList}\small\item\em Pointer to the robot\textquotesingle{}s position (\doxylink{class_pose}{Pose} object). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_interface_afe3602347cb98f44d206b3143c3157ef}{connection\+Status}}
+\begin{DoxyCompactList}\small\item\em Status of the robot\textquotesingle{}s connection (true = connected, false = disconnected). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_robot_interface_a385c5ee7a52282ab054191bfac9d5453}\index{RobotInterface@{RobotInterface}!RobotInterface@{RobotInterface}}
+\index{RobotInterface@{RobotInterface}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{RobotInterface()}{RobotInterface()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a385c5ee7a52282ab054191bfac9d5453} 
+Robot\+Interface\+::\+Robot\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_robot_interface}{Robot\+Interface}. 
+
+Initializes the position pointer to nullptr and sets the connection status to false. \Hypertarget{class_robot_interface_a66b502300e773278b531ad74b83fd78d}\index{RobotInterface@{RobotInterface}!````~RobotInterface@{\texorpdfstring{$\sim$}{\string~}RobotInterface}}
+\index{````~RobotInterface@{\texorpdfstring{$\sim$}{\string~}RobotInterface}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RobotInterface()}{\string~RobotInterface()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a66b502300e773278b531ad74b83fd78d} 
+Robot\+Interface\+::\texorpdfstring{$\sim$}{\string~}\+Robot\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for \doxylink{class_robot_interface}{Robot\+Interface}. 
+
+Deletes the dynamically allocated position object to free memory. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_interface_a7dc50b9b2033c17993b932ce6feb9033}\index{RobotInterface@{RobotInterface}!connectRobot@{connectRobot}}
+\index{connectRobot@{connectRobot}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{connectRobot()}{connectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a7dc50b9b2033c17993b932ce6feb9033} 
+bool Robot\+Interface\+::connect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Connects the robot. 
+
+\begin{DoxyReturn}{Returns}
+True if the connection is successful. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_interface_a5b67fa1caec4ccabc928c867343e0c11}\index{RobotInterface@{RobotInterface}!disconnectRobot@{disconnectRobot}}
+\index{disconnectRobot@{disconnectRobot}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{disconnectRobot()}{disconnectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a5b67fa1caec4ccabc928c867343e0c11} 
+bool Robot\+Interface\+::disconnect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disconnects the robot. 
+
+\begin{DoxyReturn}{Returns}
+True if the disconnection is successful. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_interface_af5090befb1025af4e8971479efb23d25}\index{RobotInterface@{RobotInterface}!getPose@{getPose}}
+\index{getPose@{getPose}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \label{class_robot_interface_af5090befb1025af4e8971479efb23d25} 
+\mbox{\hyperlink{class_pose}{Pose}} Robot\+Interface\+::get\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the current position of the robot. 
+
+\begin{DoxyReturn}{Returns}
+The current position as a \doxylink{class_pose}{Pose} object. Returns a default \doxylink{class_pose}{Pose} object if position is null. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_interface_a9dc95f761a9f221701127e671016e168}\index{RobotInterface@{RobotInterface}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a9dc95f761a9f221701127e671016e168} 
+void Robot\+Interface\+::move\+Backward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot backward. 
+
+\Hypertarget{class_robot_interface_aa91852875e0f188d0f17b67b09b1f554}\index{RobotInterface@{RobotInterface}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily \label{class_robot_interface_aa91852875e0f188d0f17b67b09b1f554} 
+void Robot\+Interface\+::move\+Forward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot forward. 
+
+\Hypertarget{class_robot_interface_a817e7914a382e1310633a4bc5e92f998}\index{RobotInterface@{RobotInterface}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a817e7914a382e1310633a4bc5e92f998} 
+void Robot\+Interface\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot to the left. 
+
+\Hypertarget{class_robot_interface_a192233af22a45099b6e8c735ebc9497d}\index{RobotInterface@{RobotInterface}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a192233af22a45099b6e8c735ebc9497d} 
+void Robot\+Interface\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot to the right. 
+
+\Hypertarget{class_robot_interface_a7d5eb639471127aea65f96b9546c3a96}\index{RobotInterface@{RobotInterface}!print@{print}}
+\index{print@{print}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a7d5eb639471127aea65f96b9546c3a96} 
+void Robot\+Interface\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints the robot\textquotesingle{}s current position. 
+
+\Hypertarget{class_robot_interface_aaa0181d92296347b3e1092e93f831c28}\index{RobotInterface@{RobotInterface}!stop@{stop}}
+\index{stop@{stop}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_robot_interface_aaa0181d92296347b3e1092e93f831c28} 
+void Robot\+Interface\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Stops the robot\textquotesingle{}s movement. 
+
+\Hypertarget{class_robot_interface_a7bb498e78f25da8f9dcce3802be3ab00}\index{RobotInterface@{RobotInterface}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a7bb498e78f25da8f9dcce3802be3ab00} 
+void Robot\+Interface\+::turn\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Turns the robot to the left. 
+
+\Hypertarget{class_robot_interface_a6b65eca376374dc4b6133835bd9a56a3}\index{RobotInterface@{RobotInterface}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a6b65eca376374dc4b6133835bd9a56a3} 
+void Robot\+Interface\+::turn\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Turns the robot to the right. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_robot_interface_afe3602347cb98f44d206b3143c3157ef}\index{RobotInterface@{RobotInterface}!connectionStatus@{connectionStatus}}
+\index{connectionStatus@{connectionStatus}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{connectionStatus}{connectionStatus}}
+{\footnotesize\ttfamily \label{class_robot_interface_afe3602347cb98f44d206b3143c3157ef} 
+bool Robot\+Interface\+::connection\+Status\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Status of the robot\textquotesingle{}s connection (true = connected, false = disconnected). 
+
+\Hypertarget{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b}\index{RobotInterface@{RobotInterface}!position@{position}}
+\index{position@{position}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b} 
+\mbox{\hyperlink{class_pose}{Pose}}\texorpdfstring{$\ast$}{*} Robot\+Interface\+::position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer to the robot\textquotesingle{}s position (\doxylink{class_pose}{Pose} object). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_robot_interface_8h}{Robot\+Interface.\+h}}\item 
+\mbox{\hyperlink{_robot_interface_8cpp}{Robot\+Interface.\+cpp}}\end{DoxyCompactItemize}

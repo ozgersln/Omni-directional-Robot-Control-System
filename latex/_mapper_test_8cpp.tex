@@ -1,0 +1,82 @@
+\doxysection{Mapper\+Test.\+cpp File Reference}
+\hypertarget{_mapper_test_8cpp}{}\label{_mapper_test_8cpp}\index{MapperTest.cpp@{MapperTest.cpp}}
+
+
+Tests the functionality of the \doxylink{class_mapper}{Mapper} class.  
+
+
+{\ttfamily \#include "{}Mapper.\+h"{}}\newline
+{\ttfamily \#include "{}Robot\+Controler.\+h"{}}\newline
+{\ttfamily \#include "{}Lidar\+Sensor.\+h"{}}\newline
+{\ttfamily \#include "{}Festo\+Robot\+API.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_mapper_test_8cpp_a0416f2219dbaa9d2798cf8086257359c}{test\+Mapper}} ()
+\begin{DoxyCompactList}\small\item\em Runs a series of tests on the \doxylink{class_mapper}{Mapper} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_mapper_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function to execute the \doxylink{class_mapper}{Mapper} tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tests the functionality of the \doxylink{class_mapper}{Mapper} class. 
+
+\begin{DoxyAuthor}{Author}
+Rümeysa Çelik (\href{mailto:152120211125@ogrenci.ogu.edu.tr}{\texttt{ 152120211125@ogrenci.\+ogu.\+edu.\+tr}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_mapper_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{MapperTest.cpp@{MapperTest.cpp}!main@{main}}
+\index{main@{main}!MapperTest.cpp@{MapperTest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_mapper_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main function to execute the \doxylink{class_mapper}{Mapper} tests. 
+
+\begin{DoxyReturn}{Returns}
+Exit status of the program. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Execute the \doxylink{class_mapper}{Mapper} tests.\Hypertarget{_mapper_test_8cpp_a0416f2219dbaa9d2798cf8086257359c}\index{MapperTest.cpp@{MapperTest.cpp}!testMapper@{testMapper}}
+\index{testMapper@{testMapper}!MapperTest.cpp@{MapperTest.cpp}}
+\doxysubsubsection{\texorpdfstring{testMapper()}{testMapper()}}
+{\footnotesize\ttfamily \label{_mapper_test_8cpp_a0416f2219dbaa9d2798cf8086257359c} 
+void test\+Mapper (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Runs a series of tests on the \doxylink{class_mapper}{Mapper} class. 
+
+\texorpdfstring{$<$}{<} Instance of the robot API.
+
+\texorpdfstring{$<$}{<} Robot\textquotesingle{}s initial position.
+
+\texorpdfstring{$<$}{<} Robot controller instance.
+
+\texorpdfstring{$<$}{<} Lidar sensor instance.
+
+\texorpdfstring{$<$}{<} \doxylink{class_mapper}{Mapper} instance with a 20x20 grid and 1.\+0 cell size.
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Test 1\+: Update the map using the \doxylink{class_mapper}{Mapper} class. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Test 2\+: Save the map to a file and verify success. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Test 3\+: Verify the map contents in the saved file. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Test 4\+: Move the robot, update the map, and verify the updates. \end{DoxyRefDesc}

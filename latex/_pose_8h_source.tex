@@ -1,0 +1,48 @@
+\doxysection{Pose.\+h}
+\hypertarget{_pose_8h_source}{}\label{_pose_8h_source}\mbox{\hyperlink{_pose_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POSE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POSE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pose}{Pose}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{double}\ x,\ y,\ th;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ th);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_adc90bfea798ef45d86d498adf54daa92}{getX}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a4aff5e9f59a91a56ef96f21bceea3611}{getY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a5f5b8dd28601c740c41dfdd4a29a9d91}{getTh}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}{setX}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}{setY}}(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_ae2155663de71ff3d7decb6b7807f5c64}{setTh}}(\textcolor{keywordtype}{double}\ th);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pose_a1757992faee5924c3b357dae12304d4b}{operator==}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_pose_ad249b18aa807d067dd6168b6cc212878}{operator+}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_pose_a9a0ea8f95b44c19d1ad1463d86f621db}{operator-\/}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\&\ \mbox{\hyperlink{class_pose_a181d2ef818ec1a0f1cd4d6fe9b8fdf32}{operator+=}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\&\ \mbox{\hyperlink{class_pose_af5d0a6a3ac10729c4e1538372cfa37a7}{operator-\/=}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pose_adb975d984d0edcb242df45f0d169d65e}{operator<}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_ad825de82a342050f295e2585a7ba63fd}{getPose}}(\textcolor{keywordtype}{double}\&\ \_x,\ \textcolor{keywordtype}{double}\&\ \_y,\ \textcolor{keywordtype}{double}\&\ \_th);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_af6457955dbb4d6ffbd812c9fab70b999}{setPose}}(\textcolor{keywordtype}{double}\ \_x,\ \textcolor{keywordtype}{double}\ \_y,\ \textcolor{keywordtype}{double}\ \_th);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Distance\ and\ angle\ calculations}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a1dc23e3adbc0f535941ee6082277a419}{findDistanceTo}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a345ce681909489a291fa9255762a29ac}{findAngleTo}}(\mbox{\hyperlink{class_pose}{Pose}}\&\ other);\ \textcolor{comment}{//\ Returns\ the\ angle\ in\ degrees}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

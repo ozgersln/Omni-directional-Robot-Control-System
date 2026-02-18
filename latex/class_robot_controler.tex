@@ -1,0 +1,228 @@
+\doxysection{Robot\+Controler Class Reference}
+\hypertarget{class_robot_controler}{}\label{class_robot_controler}\index{RobotControler@{RobotControler}}
+
+
+Manages the control and movement of the robot, as well as its connection to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Controler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_robot_controler_a00c36720a2c43d6f78f6f2db4e465d36}{Robot\+Controler}} (\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*}position, \mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}robot\+API)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_robot_controler}{Robot\+Controler} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93}{\texorpdfstring{$\sim$}{\string~}\+Robot\+Controler}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_robot_controler}{Robot\+Controler} class. Cleans up dynamically allocated resources. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_controler_ad5aa07bee066e544fcefd7d64f218b40}{Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the connection status of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19}{turn\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Turns the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29}{turn\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Turns the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa}{move\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot forward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e}{move\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot backward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the robot\textquotesingle{}s movement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420}{get\+Pose}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current position of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a240b2e253007a8791d52df85a32e18e0}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the status and position of the robot to the console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_controler_a1ce9a8d2c412702047a944081ea68160}{connect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em Connects the robot to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2}{disconnect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects the robot from the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. Frees the associated resources and resets the connection status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the control and movement of the robot, as well as its connection to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_robot_controler_a00c36720a2c43d6f78f6f2db4e465d36}\index{RobotControler@{RobotControler}!RobotControler@{RobotControler}}
+\index{RobotControler@{RobotControler}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{RobotControler()}{RobotControler()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a00c36720a2c43d6f78f6f2db4e465d36} 
+Robot\+Controler\+::\+Robot\+Controler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*}}]{position}{, }\item[{\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}}]{robot\+API}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_robot_controler}{Robot\+Controler} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{class_pose}{Pose} object representing the robot\textquotesingle{}s position. \\
+\hline
+{\em robot\+API} & Pointer to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} object for robot control.\\
+\hline
+{\em position} & Pointer to the robot\textquotesingle{}s initial position (\doxylink{class_pose}{Pose} object). \\
+\hline
+{\em robot\+API} & Pointer to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} object for controlling the robot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93}\index{RobotControler@{RobotControler}!````~RobotControler@{\texorpdfstring{$\sim$}{\string~}RobotControler}}
+\index{````~RobotControler@{\texorpdfstring{$\sim$}{\string~}RobotControler}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RobotControler()}{\string~RobotControler()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93} 
+Robot\+Controler\+::\texorpdfstring{$\sim$}{\string~}\+Robot\+Controler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_robot_controler}{Robot\+Controler} class. Cleans up dynamically allocated resources. 
+
+Destructor for the \doxylink{class_robot_controler}{Robot\+Controler} class. Deletes the dynamically allocated \doxylink{class_pose}{Pose} and \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_controler_a1ce9a8d2c412702047a944081ea68160}\index{RobotControler@{RobotControler}!connectRobot@{connectRobot}}
+\index{connectRobot@{connectRobot}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{connectRobot()}{connectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a1ce9a8d2c412702047a944081ea68160} 
+bool Robot\+Controler\+::connect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Connects the robot to the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. 
+
+\begin{DoxyReturn}{Returns}
+True if the connection is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2}\index{RobotControler@{RobotControler}!disconnectRobot@{disconnectRobot}}
+\index{disconnectRobot@{disconnectRobot}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{disconnectRobot()}{disconnectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2} 
+bool Robot\+Controler\+::disconnect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disconnects the robot from the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. Frees the associated resources and resets the connection status. 
+
+Disconnects the robot from the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. Frees the memory allocated for the robot\+API object and resets the pointer.
+
+\begin{DoxyReturn}{Returns}
+False to indicate the robot is disconnected. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420}\index{RobotControler@{RobotControler}!getPose@{getPose}}
+\index{getPose@{getPose}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420} 
+\mbox{\hyperlink{class_pose}{Pose}} Robot\+Controler\+::get\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the current position of the robot. 
+
+Retrieves the current pose of the robot (x, y, and theta).
+
+\begin{DoxyReturn}{Returns}
+The current position of the robot as a \doxylink{class_pose}{Pose} object.
+
+The current pose of the robot as a \doxylink{class_pose}{Pose} object. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e}\index{RobotControler@{RobotControler}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e} 
+void Robot\+Controler\+::move\+Backward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot backward. 
+
+Moves the robot backward. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa}\index{RobotControler@{RobotControler}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa} 
+void Robot\+Controler\+::move\+Forward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot forward. 
+
+Moves the robot forward. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350}\index{RobotControler@{RobotControler}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350} 
+void Robot\+Controler\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot to the left. 
+
+Moves the robot to the left. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e}\index{RobotControler@{RobotControler}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e} 
+void Robot\+Controler\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot to the right. 
+
+Moves the robot to the right. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_a240b2e253007a8791d52df85a32e18e0}\index{RobotControler@{RobotControler}!print@{print}}
+\index{print@{print}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a240b2e253007a8791d52df85a32e18e0} 
+void Robot\+Controler\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints the status and position of the robot to the console. 
+
+Prints the status and position of the robot. Displays whether the robot is connected and its current pose (x, y, theta). \Hypertarget{class_robot_controler_ad5aa07bee066e544fcefd7d64f218b40}\index{RobotControler@{RobotControler}!Status@{Status}}
+\index{Status@{Status}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ad5aa07bee066e544fcefd7d64f218b40} 
+bool Robot\+Controler\+::\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the connection status of the robot. 
+
+Retrieves the current connection status of the robot.
+
+\begin{DoxyReturn}{Returns}
+True if the robot is connected, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9}\index{RobotControler@{RobotControler}!stop@{stop}}
+\index{stop@{stop}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9} 
+void Robot\+Controler\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Stops the robot\textquotesingle{}s movement. 
+
+Stops the robot\textquotesingle{}s motion. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19}\index{RobotControler@{RobotControler}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19} 
+void Robot\+Controler\+::turn\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Turns the robot to the left. 
+
+Rotates the robot to the left. Executes the operation only if the robot is connected. \Hypertarget{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29}\index{RobotControler@{RobotControler}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29} 
+void Robot\+Controler\+::turn\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Turns the robot to the right. 
+
+Rotates the robot to the right. Executes the operation only if the robot is connected. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_robot_controler_8h}{Robot\+Controler.\+h}}\item 
+\mbox{\hyperlink{_robot_controler_8cpp}{Robot\+Controler.\+cpp}}\end{DoxyCompactItemize}

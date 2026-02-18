@@ -1,0 +1,165 @@
+\doxysection{Pose Class Reference}
+\hypertarget{class_pose}{}\label{class_pose}\index{Pose@{Pose}}
+
+
+{\ttfamily \#include $<$Pose.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}} ()
+\item 
+\mbox{\hyperlink{class_pose_a49fd35f550ecdbda9b0bcf8344283717}{Pose}} (double x, double y, double th)
+\item 
+double \mbox{\hyperlink{class_pose_adc90bfea798ef45d86d498adf54daa92}{getX}} () const
+\item 
+double \mbox{\hyperlink{class_pose_a4aff5e9f59a91a56ef96f21bceea3611}{getY}} () const
+\item 
+double \mbox{\hyperlink{class_pose_a5f5b8dd28601c740c41dfdd4a29a9d91}{get\+Th}} () const
+\item 
+void \mbox{\hyperlink{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}{setX}} (double x)
+\item 
+void \mbox{\hyperlink{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}{setY}} (double y)
+\item 
+void \mbox{\hyperlink{class_pose_ae2155663de71ff3d7decb6b7807f5c64}{set\+Th}} (double th)
+\item 
+bool \mbox{\hyperlink{class_pose_a1757992faee5924c3b357dae12304d4b}{operator==}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_pose_ad249b18aa807d067dd6168b6cc212878}{operator+}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_pose_a9a0ea8f95b44c19d1ad1463d86f621db}{operator-\/}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \& \mbox{\hyperlink{class_pose_a181d2ef818ec1a0f1cd4d6fe9b8fdf32}{operator+=}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \& \mbox{\hyperlink{class_pose_af5d0a6a3ac10729c4e1538372cfa37a7}{operator-\/=}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+bool \mbox{\hyperlink{class_pose_adb975d984d0edcb242df45f0d169d65e}{operator$<$}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+void \mbox{\hyperlink{class_pose_ad825de82a342050f295e2585a7ba63fd}{get\+Pose}} (double \&\+\_\+x, double \&\+\_\+y, double \&\+\_\+th)
+\item 
+void \mbox{\hyperlink{class_pose_af6457955dbb4d6ffbd812c9fab70b999}{set\+Pose}} (double \+\_\+x, double \+\_\+y, double \+\_\+th)
+\item 
+double \mbox{\hyperlink{class_pose_a1dc23e3adbc0f535941ee6082277a419}{find\+Distance\+To}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\item 
+double \mbox{\hyperlink{class_pose_a345ce681909489a291fa9255762a29ac}{find\+Angle\+To}} (\mbox{\hyperlink{class_pose}{Pose}} \&other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}\index{Pose@{Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{Pose()}{Pose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad} 
+Pose\+::\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a49fd35f550ecdbda9b0bcf8344283717}\index{Pose@{Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{Pose()}{Pose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_pose_a49fd35f550ecdbda9b0bcf8344283717} 
+Pose\+::\+Pose (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{th}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pose_a345ce681909489a291fa9255762a29ac}\index{Pose@{Pose}!findAngleTo@{findAngleTo}}
+\index{findAngleTo@{findAngleTo}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{findAngleTo()}{findAngleTo()}}
+{\footnotesize\ttfamily \label{class_pose_a345ce681909489a291fa9255762a29ac} 
+double Pose\+::find\+Angle\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a1dc23e3adbc0f535941ee6082277a419}\index{Pose@{Pose}!findDistanceTo@{findDistanceTo}}
+\index{findDistanceTo@{findDistanceTo}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{findDistanceTo()}{findDistanceTo()}}
+{\footnotesize\ttfamily \label{class_pose_a1dc23e3adbc0f535941ee6082277a419} 
+double Pose\+::find\+Distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_ad825de82a342050f295e2585a7ba63fd}\index{Pose@{Pose}!getPose@{getPose}}
+\index{getPose@{getPose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \label{class_pose_ad825de82a342050f295e2585a7ba63fd} 
+void Pose\+::get\+Pose (\begin{DoxyParamCaption}\item[{double \&}]{\+\_\+x}{, }\item[{double \&}]{\+\_\+y}{, }\item[{double \&}]{\+\_\+th}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a5f5b8dd28601c740c41dfdd4a29a9d91}\index{Pose@{Pose}!getTh@{getTh}}
+\index{getTh@{getTh}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getTh()}{getTh()}}
+{\footnotesize\ttfamily \label{class_pose_a5f5b8dd28601c740c41dfdd4a29a9d91} 
+double Pose\+::get\+Th (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_pose_adc90bfea798ef45d86d498adf54daa92}\index{Pose@{Pose}!getX@{getX}}
+\index{getX@{getX}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_pose_adc90bfea798ef45d86d498adf54daa92} 
+double Pose\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_pose_a4aff5e9f59a91a56ef96f21bceea3611}\index{Pose@{Pose}!getY@{getY}}
+\index{getY@{getY}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_pose_a4aff5e9f59a91a56ef96f21bceea3611} 
+double Pose\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_pose_ad249b18aa807d067dd6168b6cc212878}\index{Pose@{Pose}!operator+@{operator+}}
+\index{operator+@{operator+}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_pose_ad249b18aa807d067dd6168b6cc212878} 
+\mbox{\hyperlink{class_pose}{Pose}} Pose\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a181d2ef818ec1a0f1cd4d6fe9b8fdf32}\index{Pose@{Pose}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{class_pose_a181d2ef818ec1a0f1cd4d6fe9b8fdf32} 
+\mbox{\hyperlink{class_pose}{Pose}} \& Pose\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a9a0ea8f95b44c19d1ad1463d86f621db}\index{Pose@{Pose}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_pose_a9a0ea8f95b44c19d1ad1463d86f621db} 
+\mbox{\hyperlink{class_pose}{Pose}} Pose\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_af5d0a6a3ac10729c4e1538372cfa37a7}\index{Pose@{Pose}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{class_pose_af5d0a6a3ac10729c4e1538372cfa37a7} 
+\mbox{\hyperlink{class_pose}{Pose}} \& Pose\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_adb975d984d0edcb242df45f0d169d65e}\index{Pose@{Pose}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_pose_adb975d984d0edcb242df45f0d169d65e} 
+bool Pose\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a1757992faee5924c3b357dae12304d4b}\index{Pose@{Pose}!operator==@{operator==}}
+\index{operator==@{operator==}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_pose_a1757992faee5924c3b357dae12304d4b} 
+bool Pose\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_af6457955dbb4d6ffbd812c9fab70b999}\index{Pose@{Pose}!setPose@{setPose}}
+\index{setPose@{setPose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setPose()}{setPose()}}
+{\footnotesize\ttfamily \label{class_pose_af6457955dbb4d6ffbd812c9fab70b999} 
+void Pose\+::set\+Pose (\begin{DoxyParamCaption}\item[{double}]{\+\_\+x}{, }\item[{double}]{\+\_\+y}{, }\item[{double}]{\+\_\+th}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_ae2155663de71ff3d7decb6b7807f5c64}\index{Pose@{Pose}!setTh@{setTh}}
+\index{setTh@{setTh}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setTh()}{setTh()}}
+{\footnotesize\ttfamily \label{class_pose_ae2155663de71ff3d7decb6b7807f5c64} 
+void Pose\+::set\+Th (\begin{DoxyParamCaption}\item[{double}]{th}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}\index{Pose@{Pose}!setX@{setX}}
+\index{setX@{setX}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily \label{class_pose_a9d1efd2c1807e1419dc81ba75e35e929} 
+void Pose\+::setX (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}\index{Pose@{Pose}!setY@{setY}}
+\index{setY@{setY}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily \label{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac} 
+void Pose\+::setY (\begin{DoxyParamCaption}\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pose_8h}{Pose.\+h}}\item 
+\mbox{\hyperlink{_pose_8cpp}{Pose.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{Mapper Class Reference}
+\hypertarget{class_mapper}{}\label{class_mapper}\index{Mapper@{Mapper}}
+
+
+Handles mapping functionality, including updates and saving map data.  
+
+
+
+
+{\ttfamily \#include $<$Mapper.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mapper_acca977a6536bc8bbb94415fa3ec845a7}{Mapper}} (int grid\+SizeX, int grid\+SizeY, double cell\+Size, \mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}controller, \mbox{\hyperlink{class_lidar_sensor}{Lidar\+Sensor}} \texorpdfstring{$\ast$}{*}lidar)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_mapper}{Mapper} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}{update\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Updates the map using data from the Lidar sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mapper_a7c4f5937b6ad8a951e1f200424fdc794}{record\+Map}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Records the current map to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapper_a9ef2cbbc2974919674740f2838faba7e}{show\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Displays the current map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles mapping functionality, including updates and saving map data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mapper_acca977a6536bc8bbb94415fa3ec845a7}\index{Mapper@{Mapper}!Mapper@{Mapper}}
+\index{Mapper@{Mapper}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{Mapper()}{Mapper()}}
+{\footnotesize\ttfamily \label{class_mapper_acca977a6536bc8bbb94415fa3ec845a7} 
+Mapper\+::\+Mapper (\begin{DoxyParamCaption}\item[{int}]{grid\+SizeX}{, }\item[{int}]{grid\+SizeY}{, }\item[{double}]{cell\+Size}{, }\item[{\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}}]{controller}{, }\item[{\mbox{\hyperlink{class_lidar_sensor}{Lidar\+Sensor}} \texorpdfstring{$\ast$}{*}}]{lidar}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_mapper}{Mapper} object. 
+
+Constructor for the \doxylink{class_mapper}{Mapper} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid\+SizeX} & Number of grid cells in the X direction. \\
+\hline
+{\em grid\+SizeY} & Number of grid cells in the Y direction. \\
+\hline
+{\em cell\+Size} & The size of each grid cell. \\
+\hline
+{\em controller} & Pointer to the robot controller. \\
+\hline
+{\em lidar} & Pointer to the Lidar sensor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mapper_a7c4f5937b6ad8a951e1f200424fdc794}\index{Mapper@{Mapper}!recordMap@{recordMap}}
+\index{recordMap@{recordMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{recordMap()}{recordMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a7c4f5937b6ad8a951e1f200424fdc794} 
+bool Mapper\+::record\+Map (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Records the current map to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file where the map will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the map was successfully saved, false otherwise. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Opens the file for writing.
+
+\texorpdfstring{$<$}{<} Return false if the file cannot be opened.
+
+\texorpdfstring{$<$}{<} Write grid values to the file.
+
+\texorpdfstring{$<$}{<} Close the file.
+
+\texorpdfstring{$<$}{<} Return false if writing data fails.\Hypertarget{class_mapper_a9ef2cbbc2974919674740f2838faba7e}\index{Mapper@{Mapper}!showMap@{showMap}}
+\index{showMap@{showMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{showMap()}{showMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a9ef2cbbc2974919674740f2838faba7e} 
+void Mapper\+::show\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the current map. 
+
+Displays the current map in the console. \texorpdfstring{$<$}{<} Calls the \doxylink{class_map}{Map} class method to display the map.\Hypertarget{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}\index{Mapper@{Mapper}!updateMap@{updateMap}}
+\index{updateMap@{updateMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{updateMap()}{updateMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8} 
+void Mapper\+::update\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the map using data from the Lidar sensor. 
+
+\texorpdfstring{$<$}{<} Updates the Lidar sensor data.
+
+\texorpdfstring{$<$}{<} Retrieves the current pose of the robot.
+
+\texorpdfstring{$<$}{<} Skip invalid distance readings.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mapper_8h}{Mapper.\+h}}\item 
+\mbox{\hyperlink{_mapper_8cpp}{Mapper.\+cpp}}\end{DoxyCompactItemize}

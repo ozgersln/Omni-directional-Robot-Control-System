@@ -1,0 +1,256 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+
+
+A class that represents a 2D grid map for spatial representation.  
+
+
+
+
+{\ttfamily \#include $<$Map.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_ac1b95699cf02396d8e50c5bae6b4853d}{Map}} (int x, int y, double size)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_map}{Map} object with specified grid dimensions and grid size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_aedb4c26cb1faef2bcf2fe55b0bf0d323}{insert\+Point}} (\mbox{\hyperlink{class_point}{Point}})
+\begin{DoxyCompactList}\small\item\em Inserts a point into the map by marking its corresponding grid cell. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_map_a0b85a64698e8c287194ae080b48c8598}{get\+Grid}} (int indexX, int indexY)
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a specific grid cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a3c708b3b9b2ca9b4f1d0401a5a94212d}{set\+Grid}} (int indexX, int indexY, int value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a specific grid cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a7ded655c7db0e9d72816430b4f2c83a5}{clear\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Clears the entire map by resetting all grid cells to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a77f36fa2e4aab15f1108c127cd785831}{print\+Info}} () const
+\begin{DoxyCompactList}\small\item\em Prints basic information about the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a36679bcc048d59f8e2b8ccc81598200c}{show\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Displays the map in the console, showing \textquotesingle{}.\textquotesingle{} for empty cells and \textquotesingle{}x\textquotesingle{} for occupied cells. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_map_a791b15386c93066fe0c1c25f1cf28def}{get\+NumberX}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of grids in the X direction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_map_ac64935151f6b34db8b23941885c66a4f}{get\+NumberY}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of grids in the Y direction. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_map_a5996d3a19b208b0c387d4e6a8df4dce4}{add\+Grid\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total number of grids in the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a7042a51b83df591bcc0d2ecd84d2a6bc}{set\+Grid\+Size}} (double size)
+\begin{DoxyCompactList}\small\item\em Sets the size of each grid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\texorpdfstring{$\sim$}{\string~}\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \doxylink{class_map}{Map} object and deallocates the memory used by the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_map_ad680ffb68804806ebc7f27e088314580}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_map}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Overloaded stream insertion operator for displaying the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a 2D grid map for spatial representation. 
+
+\begin{DoxyAuthor}{Author}
+Özge Erarslan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_ac1b95699cf02396d8e50c5bae6b4853d}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily \label{class_map_ac1b95699cf02396d8e50c5bae6b4853d} 
+Map\+::\+Map (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{double}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_map}{Map} object with specified grid dimensions and grid size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Number of grids in the X direction (default is 0). \\
+\hline
+{\em y} & Number of grids in the Y direction (default is 0). \\
+\hline
+{\em size} & The size of each grid (default is 1.\+0). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}\index{Map@{Map}!````~Map@{\texorpdfstring{$\sim$}{\string~}Map}}
+\index{````~Map@{\texorpdfstring{$\sim$}{\string~}Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Map()}{\string~Map()}}
+{\footnotesize\ttfamily \label{class_map_aa403fbe09394ccf39747588f5168e3b2} 
+Map\+::\texorpdfstring{$\sim$}{\string~}\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroys the \doxylink{class_map}{Map} object and deallocates the memory used by the grid. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_a5996d3a19b208b0c387d4e6a8df4dce4}\index{Map@{Map}!addGridSize@{addGridSize}}
+\index{addGridSize@{addGridSize}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addGridSize()}{addGridSize()}}
+{\footnotesize\ttfamily \label{class_map_a5996d3a19b208b0c387d4e6a8df4dce4} 
+double Map\+::add\+Grid\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the total number of grids in the map. 
+
+\begin{DoxyReturn}{Returns}
+The total number of grids. 
+\end{DoxyReturn}
+\Hypertarget{class_map_a7ded655c7db0e9d72816430b4f2c83a5}\index{Map@{Map}!clearMap@{clearMap}}
+\index{clearMap@{clearMap}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{clearMap()}{clearMap()}}
+{\footnotesize\ttfamily \label{class_map_a7ded655c7db0e9d72816430b4f2c83a5} 
+void Map\+::clear\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Clears the entire map by resetting all grid cells to 0. 
+
+\Hypertarget{class_map_a0b85a64698e8c287194ae080b48c8598}\index{Map@{Map}!getGrid@{getGrid}}
+\index{getGrid@{getGrid}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getGrid()}{getGrid()}}
+{\footnotesize\ttfamily \label{class_map_a0b85a64698e8c287194ae080b48c8598} 
+int Map\+::get\+Grid (\begin{DoxyParamCaption}\item[{int}]{indexX}{, }\item[{int}]{indexY}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the value of a specific grid cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indexX} & The X index of the grid cell. \\
+\hline
+{\em indexY} & The Y index of the grid cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value at the specified grid cell. 
+\end{DoxyReturn}
+\Hypertarget{class_map_a791b15386c93066fe0c1c25f1cf28def}\index{Map@{Map}!getNumberX@{getNumberX}}
+\index{getNumberX@{getNumberX}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getNumberX()}{getNumberX()}}
+{\footnotesize\ttfamily \label{class_map_a791b15386c93066fe0c1c25f1cf28def} 
+int Map\+::get\+NumberX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of grids in the X direction. 
+
+\begin{DoxyReturn}{Returns}
+The number of grids in the X direction. 
+\end{DoxyReturn}
+\Hypertarget{class_map_ac64935151f6b34db8b23941885c66a4f}\index{Map@{Map}!getNumberY@{getNumberY}}
+\index{getNumberY@{getNumberY}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getNumberY()}{getNumberY()}}
+{\footnotesize\ttfamily \label{class_map_ac64935151f6b34db8b23941885c66a4f} 
+int Map\+::get\+NumberY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of grids in the Y direction. 
+
+\begin{DoxyReturn}{Returns}
+The number of grids in the Y direction. 
+\end{DoxyReturn}
+\Hypertarget{class_map_aedb4c26cb1faef2bcf2fe55b0bf0d323}\index{Map@{Map}!insertPoint@{insertPoint}}
+\index{insertPoint@{insertPoint}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{insertPoint()}{insertPoint()}}
+{\footnotesize\ttfamily \label{class_map_aedb4c26cb1faef2bcf2fe55b0bf0d323} 
+void Map\+::insert\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Inserts a point into the map by marking its corresponding grid cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A \doxylink{class_point}{Point} object to insert. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_a77f36fa2e4aab15f1108c127cd785831}\index{Map@{Map}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_map_a77f36fa2e4aab15f1108c127cd785831} 
+void Map\+::print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints basic information about the map. 
+
+\Hypertarget{class_map_a3c708b3b9b2ca9b4f1d0401a5a94212d}\index{Map@{Map}!setGrid@{setGrid}}
+\index{setGrid@{setGrid}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setGrid()}{setGrid()}}
+{\footnotesize\ttfamily \label{class_map_a3c708b3b9b2ca9b4f1d0401a5a94212d} 
+void Map\+::set\+Grid (\begin{DoxyParamCaption}\item[{int}]{indexX}{, }\item[{int}]{indexY}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value of a specific grid cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indexX} & The X index of the grid cell. \\
+\hline
+{\em indexY} & The Y index of the grid cell. \\
+\hline
+{\em value} & The value to set for the grid cell. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_a7042a51b83df591bcc0d2ecd84d2a6bc}\index{Map@{Map}!setGridSize@{setGridSize}}
+\index{setGridSize@{setGridSize}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setGridSize()}{setGridSize()}}
+{\footnotesize\ttfamily \label{class_map_a7042a51b83df591bcc0d2ecd84d2a6bc} 
+void Map\+::set\+Grid\+Size (\begin{DoxyParamCaption}\item[{double}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Sets the size of each grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new grid size. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_a36679bcc048d59f8e2b8ccc81598200c}\index{Map@{Map}!showMap@{showMap}}
+\index{showMap@{showMap}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{showMap()}{showMap()}}
+{\footnotesize\ttfamily \label{class_map_a36679bcc048d59f8e2b8ccc81598200c} 
+void Map\+::show\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the map in the console, showing \textquotesingle{}.\textquotesingle{} for empty cells and \textquotesingle{}x\textquotesingle{} for occupied cells. 
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_map_ad680ffb68804806ebc7f27e088314580}\index{Map@{Map}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_map_ad680ffb68804806ebc7f27e088314580} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_map}{Map}} \&}]{map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded stream insertion operator for displaying the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream object. \\
+\hline
+{\em map} & The \doxylink{class_map}{Map} object to display. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream with the map data appended. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_map_8h}{Map.\+h}}\item 
+\mbox{\hyperlink{_map_8cpp}{Map.\+cpp}}\end{DoxyCompactItemize}

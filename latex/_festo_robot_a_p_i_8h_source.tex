@@ -1,0 +1,59 @@
+\doxysection{Festo\+Robot\+API.\+h}
+\hypertarget{_festo_robot_a_p_i_8h_source}{}\label{_festo_robot_a_p_i_8h_source}\mbox{\hyperlink{_festo_robot_a_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_CRT\_SECURE\_NO\_WARNINGS}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <process.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <windows.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0}{DIRECTION}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0aa26736999186daf8146f809e863712a1}{FORWARD}}\ =\ 0,}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0afed2fca77e454294d6b8bda1bf2c9fd6}{BACKWARD}},}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0adb45120aafd37a973140edee24708065}{LEFT}},}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0aec8379af7490bb9eaaf579cf17876f38}{RIGHT}}}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i_af7c6981ab4208a965f40c7fa4104f025}{FestoRobotAPI}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//Connect\ to\ robot\ in\ simulator}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_a8e26a1dcfb6366ab8638993c40f76232}{connect}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//Disconnect\ to\ robot\ in\ simulator}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_ad473feec7c7d309efafad2cc638addbd}{disconnect}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//Move\ the\ robot\ any\ direction.\ }}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Possible\ arguments\ are\ \{FORWARD,\ BACKWARD,\ LEFT,\ RIGHT\}}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_aecb147df98dfb8f159e34ec70cf2d31e}{move}}(\mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0}{DIRECTION}});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//Rotate\ to\ any\ side.}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Possible\ arguments\ are\ \{LEFT,\ RIGHT\}}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_a5564d828ed80760b9556250fb1d7ceb2}{rotate}}(\mbox{\hyperlink{_festo_robot_a_p_i_8h_aa268a41a13430b18e933ed40207178d0}{DIRECTION}});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//Stop\ the\ robot}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_ae9d3c916c748e43f126e9967582a20bb}{stop}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ i:\ sensor\ index,\ return\ the\ distance\ in\ meters,\ (There\ are\ 9\ sensors)}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_festo_robot_a_p_i_a621b65c644c0768b3d058c5e76947691}{getIRRange}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Get\ koordinates\ of\ the\ robot\ (X:\ position\ at\ x-\/axis,\ Y:\ Position\ at\ y-\/axis,\ TH:\ heading\ angle)}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_a406bc41bd3dcd9e95ec6b9b60f0b2f19}{getXYTh}}(\textcolor{keywordtype}{double}\&\ X,\ \textcolor{keywordtype}{double}\&\ Y,\ \textcolor{keywordtype}{double}\&\ TH);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//Get\ Lidar\ Range\ Data}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_a_p_i_ab1c53fc0e3b962522b0ed335250afa64}{getLidarRange}}(\textcolor{keywordtype}{float}*);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//Get\ Lidar\ Range\ Number\ (the\ number\ of\ lidar\ range\ data)}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_festo_robot_a_p_i_a9f5ca0671b0d05162018a0708b5431c0}{getLidarRangeNumber}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+
+\end{DoxyCode}

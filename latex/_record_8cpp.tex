@@ -1,0 +1,74 @@
+\doxysection{Record.\+cpp File Reference}
+\hypertarget{_record_8cpp}{}\label{_record_8cpp}\index{Record.cpp@{Record.cpp}}
+
+
+Implementation of the \doxylink{class_record}{Record} class for file operations.  
+
+
+{\ttfamily \#include "{}Record.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{_record_8cpp_a4a84f8f920703b3fbcdd84399e216696}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{class_record}{Record}} \&record)
+\begin{DoxyCompactList}\small\item\em Outputs all lines of the record to the stream. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{_record_8cpp_a580deb79c437077e179f78db15a889eb}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_record}{Record}} \&record)
+\begin{DoxyCompactList}\small\item\em Reads lines from the input stream and writes them to the record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{class_record}{Record} class for file operations. 
+
+\begin{DoxyAuthor}{Author}
+Rümeysa Çelik (\href{mailto:152120211125@ogrenci.ogu.edu.tr}{\texttt{ 152120211125@ogrenci.\+ogu.\+edu.\+tr}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_record_8cpp_a4a84f8f920703b3fbcdd84399e216696}\index{Record.cpp@{Record.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Record.cpp@{Record.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{_record_8cpp_a4a84f8f920703b3fbcdd84399e216696} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\item[{\mbox{\hyperlink{class_record}{Record}} \&}]{record}{}\end{DoxyParamCaption})}
+
+
+
+Outputs all lines of the record to the stream. 
+
+Overloads the output stream operator for the \doxylink{class_record}{Record} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em record} & The record object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+\Hypertarget{_record_8cpp_a580deb79c437077e179f78db15a889eb}\index{Record.cpp@{Record.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Record.cpp@{Record.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \label{_record_8cpp_a580deb79c437077e179f78db15a889eb} 
+istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is}{, }\item[{\mbox{\hyperlink{class_record}{Record}} \&}]{record}{}\end{DoxyParamCaption})}
+
+
+
+Reads lines from the input stream and writes them to the record. 
+
+Overloads the input stream operator for the \doxylink{class_record}{Record} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em record} & The record object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}

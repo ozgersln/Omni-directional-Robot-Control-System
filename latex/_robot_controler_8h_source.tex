@@ -1,0 +1,48 @@
+\doxysection{Robot\+Controler.\+h}
+\hypertarget{_robot_controler_8h_source}{}\label{_robot_controler_8h_source}\mbox{\hyperlink{_robot_controler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ ROBOTCONTROLER\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ROBOTCONTROLER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pose_8h}{Pose.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_festo_robot_a_p_i_8h}{FestoRobotAPI.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_robot_controler}{RobotControler}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}*\ position;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ connectionStatus;\ \ \ \ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_robot_controler_a00c36720a2c43d6f78f6f2db4e465d36}{RobotControler}}(\mbox{\hyperlink{class_pose}{Pose}}*\ position,\ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93}{\string~RobotControler}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_controler_ad5aa07bee066e544fcefd7d64f218b40}{Status}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19}{turnLeft}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29}{turnRight}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa}{moveForward}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e}{moveBackward}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350}{moveLeft}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e}{moveRight}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9}{stop}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420}{getPose}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_controler_a240b2e253007a8791d52df85a32e18e0}{print}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_controler_a1ce9a8d2c412702047a944081ea68160}{connectRobot}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2}{disconnectRobot}}();}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ROBOTCONTROLER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,36 @@
+\doxysection{Record.\+h}
+\hypertarget{_record_8h_source}{}\label{_record_8h_source}\mbox{\hyperlink{_record_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ RECORD\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ RECORD\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_record}{Record}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ fileName;\ }
+\DoxyCodeLine{00023\ \ \ \ \ fstream\ file;\ \ \ \ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_record_aa39d6330127b5381b4187229487354a6}{openFile}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_record_a7227ac8d97c634f888589f4920cc49aa}{closeFile}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_record_aa9c19eaf5bd896d4fd9884e0248a4cd0}{setFileName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_record_ad5189f2fec03ff53dd96bd12719aac43}{readLine}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_record_a3e53a0743c63c3f21715a7f8504409eb}{writeLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{friend}\ ostream\&\ \mbox{\hyperlink{class_record_a4a84f8f920703b3fbcdd84399e216696}{operator<<}}(ostream\&\ os,\ \mbox{\hyperlink{class_record}{Record}}\&\ record);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{friend}\ istream\&\ \mbox{\hyperlink{class_record_a580deb79c437077e179f78db15a889eb}{operator>>}}(istream\&\ is,\ \mbox{\hyperlink{class_record}{Record}}\&\ record);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RECORD\_H}}
+
+\end{DoxyCode}

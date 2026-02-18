@@ -1,0 +1,12 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.19)  19 DEC 2024 23:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./class_point.tex
+(class_point.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+! Undefined control sequence.
+l.1 \doxysection
+                {Point Class Reference}
+? 

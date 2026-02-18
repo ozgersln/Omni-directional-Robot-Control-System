@@ -1,0 +1,204 @@
+\doxysection{Record Class Reference}
+\hypertarget{class_record}{}\label{class_record}\index{Record@{Record}}
+
+
+Provides file handling functionalities, including read and write operations.  
+
+
+
+
+{\ttfamily \#include $<$Record.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_record_aa39d6330127b5381b4187229487354a6}{open\+File}} ()
+\begin{DoxyCompactList}\small\item\em Opens the file associated with the \doxylink{class_record}{Record} instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_record_a7227ac8d97c634f888589f4920cc49aa}{close\+File}} ()
+\begin{DoxyCompactList}\small\item\em Closes the currently open file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_record_aa9c19eaf5bd896d4fd9884e0248a4cd0}{set\+File\+Name}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the file to be managed. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_record_ad5189f2fec03ff53dd96bd12719aac43}{read\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Reads a single line from the file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_record_a3e53a0743c63c3f21715a7f8504409eb}{write\+Line}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em Writes a single line to the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_record_a4a84f8f920703b3fbcdd84399e216696}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{class_record}{Record}} \&record)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator for the \doxylink{class_record}{Record} class. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_record_a580deb79c437077e179f78db15a889eb}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_record}{Record}} \&record)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator for the \doxylink{class_record}{Record} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides file handling functionalities, including read and write operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_record_a7227ac8d97c634f888589f4920cc49aa}\index{Record@{Record}!closeFile@{closeFile}}
+\index{closeFile@{closeFile}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{closeFile()}{closeFile()}}
+{\footnotesize\ttfamily \label{class_record_a7227ac8d97c634f888589f4920cc49aa} 
+bool Record\+::close\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Closes the currently open file. 
+
+Closes the file if it is currently open.
+
+\begin{DoxyReturn}{Returns}
+True if the file is closed successfully, false otherwise.
+
+True if the file is successfully closed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_record_aa39d6330127b5381b4187229487354a6}\index{Record@{Record}!openFile@{openFile}}
+\index{openFile@{openFile}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily \label{class_record_aa39d6330127b5381b4187229487354a6} 
+bool Record\+::open\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Opens the file associated with the \doxylink{class_record}{Record} instance. 
+
+Opens the file in read, write, and append mode.
+
+\begin{DoxyReturn}{Returns}
+True if the file is opened successfully, false otherwise.
+
+True if the file is successfully opened, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_record_ad5189f2fec03ff53dd96bd12719aac43}\index{Record@{Record}!readLine@{readLine}}
+\index{readLine@{readLine}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{class_record_ad5189f2fec03ff53dd96bd12719aac43} 
+string Record\+::read\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads a single line from the file. 
+
+Reads a line from the file.
+
+\begin{DoxyReturn}{Returns}
+The line read from the file as a string.
+
+The read line as a string. Returns an empty string on error or end of file. 
+\end{DoxyReturn}
+\Hypertarget{class_record_aa9c19eaf5bd896d4fd9884e0248a4cd0}\index{Record@{Record}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{setFileName()}{setFileName()}}
+{\footnotesize\ttfamily \label{class_record_aa9c19eaf5bd896d4fd9884e0248a4cd0} 
+void Record\+::set\+File\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Sets the name of the file to be managed. 
+
+Sets the file name for the record object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the file.\\
+\hline
+{\em name} & The name of the file to be set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_record_a3e53a0743c63c3f21715a7f8504409eb}\index{Record@{Record}!writeLine@{writeLine}}
+\index{writeLine@{writeLine}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{writeLine()}{writeLine()}}
+{\footnotesize\ttfamily \label{class_record_a3e53a0743c63c3f21715a7f8504409eb} 
+bool Record\+::write\+Line (\begin{DoxyParamCaption}\item[{const string \&}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Writes a single line to the file. 
+
+Writes a string to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to be written to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the write operation is successful, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the string is successfully written, false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_record_a4a84f8f920703b3fbcdd84399e216696}\index{Record@{Record}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_record_a4a84f8f920703b3fbcdd84399e216696} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\item[{\mbox{\hyperlink{class_record}{Record}} \&}]{record}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the output stream operator for the \doxylink{class_record}{Record} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream reference. \\
+\hline
+{\em record} & Reference to the \doxylink{class_record}{Record} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modified output stream reference.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em record} & The record object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+\Hypertarget{class_record_a580deb79c437077e179f78db15a889eb}\index{Record@{Record}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_record_a580deb79c437077e179f78db15a889eb} 
+istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is}{, }\item[{\mbox{\hyperlink{class_record}{Record}} \&}]{record}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the input stream operator for the \doxylink{class_record}{Record} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream reference. \\
+\hline
+{\em record} & Reference to the \doxylink{class_record}{Record} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modified input stream reference.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em record} & The record object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_record_8h}{Record.\+h}}\item 
+\mbox{\hyperlink{_record_8cpp}{Record.\+cpp}}\end{DoxyCompactItemize}

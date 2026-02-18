@@ -1,0 +1,107 @@
+\doxysection{Sensor\+Interface Class Reference}
+\hypertarget{class_sensor_interface}{}\label{class_sensor_interface}\index{SensorInterface@{SensorInterface}}
+
+
+Abstract base class for different types of sensors.  
+
+
+
+
+{\ttfamily \#include $<$Sensor\+Interface.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_sensor_interface_a35aa49f886900c3884b6c89771dee98c}{\texorpdfstring{$\sim$}{\string~}\+Sensor\+Interface}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_sensor_interface}{Sensor\+Interface} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_interface_abc31f2115d17bcba0f0f65c07e699760}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to update the sensor value. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_sensor_interface_a39ab01ba5fcc97dcc556ec6cf4748b65}{get\+Sensor\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the type of the sensor. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_sensor_interface_a7a4c1ddbf268d93b06dffe49c4f7c74d}{get\+Sensor\+Value}} (int index) const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to get a specific sensor value by index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_sensor_interface_a6c3c12f7147be37af6b6c636e28d294e}{sensor\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for different types of sensors. 
+
+This class serves as an interface for sensors, defining common functionality that all sensors must implement. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sensor_interface_a35aa49f886900c3884b6c89771dee98c}\index{SensorInterface@{SensorInterface}!````~SensorInterface@{\texorpdfstring{$\sim$}{\string~}SensorInterface}}
+\index{````~SensorInterface@{\texorpdfstring{$\sim$}{\string~}SensorInterface}!SensorInterface@{SensorInterface}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SensorInterface()}{\string~SensorInterface()}}
+{\footnotesize\ttfamily \label{class_sensor_interface_a35aa49f886900c3884b6c89771dee98c} 
+virtual Sensor\+Interface\+::\texorpdfstring{$\sim$}{\string~}\+Sensor\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \doxylink{class_sensor_interface}{Sensor\+Interface} class. 
+
+Ensures proper cleanup of derived class objects when deleted through a \doxylink{class_sensor_interface}{Sensor\+Interface} pointer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_interface_a39ab01ba5fcc97dcc556ec6cf4748b65}\index{SensorInterface@{SensorInterface}!getSensorType@{getSensorType}}
+\index{getSensorType@{getSensorType}!SensorInterface@{SensorInterface}}
+\doxysubsubsection{\texorpdfstring{getSensorType()}{getSensorType()}}
+{\footnotesize\ttfamily \label{class_sensor_interface_a39ab01ba5fcc97dcc556ec6cf4748b65} 
+virtual std\+::string Sensor\+Interface\+::get\+Sensor\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the type of the sensor. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the sensor. 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_interface_a7a4c1ddbf268d93b06dffe49c4f7c74d}\index{SensorInterface@{SensorInterface}!getSensorValue@{getSensorValue}}
+\index{getSensorValue@{getSensorValue}!SensorInterface@{SensorInterface}}
+\doxysubsubsection{\texorpdfstring{getSensorValue()}{getSensorValue()}}
+{\footnotesize\ttfamily \label{class_sensor_interface_a7a4c1ddbf268d93b06dffe49c4f7c74d} 
+virtual double Sensor\+Interface\+::get\+Sensor\+Value (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to get a specific sensor value by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired sensor value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sensor value at the specified index. 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_interface_abc31f2115d17bcba0f0f65c07e699760}\index{SensorInterface@{SensorInterface}!update@{update}}
+\index{update@{update}!SensorInterface@{SensorInterface}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_sensor_interface_abc31f2115d17bcba0f0f65c07e699760} 
+virtual void Sensor\+Interface\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to update the sensor value. 
+
+This function must be implemented by derived classes to update the internal state of the sensor. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_sensor_interface_a6c3c12f7147be37af6b6c636e28d294e}\index{SensorInterface@{SensorInterface}!sensorType@{sensorType}}
+\index{sensorType@{sensorType}!SensorInterface@{SensorInterface}}
+\doxysubsubsection{\texorpdfstring{sensorType}{sensorType}}
+{\footnotesize\ttfamily \label{class_sensor_interface_a6c3c12f7147be37af6b6c636e28d294e} 
+std\+::string Sensor\+Interface\+::sensor\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The type of the sensor. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sensor_interface_8h}{Sensor\+Interface.\+h}}\end{DoxyCompactItemize}

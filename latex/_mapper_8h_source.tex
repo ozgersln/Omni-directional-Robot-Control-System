@@ -1,0 +1,34 @@
+\doxysection{Mapper.\+h}
+\hypertarget{_mapper_8h_source}{}\label{_mapper_8h_source}\mbox{\hyperlink{_mapper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ MAPPER\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ MAPPER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_map_8h}{Map.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_controler_8h}{RobotControler.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mapper}{Mapper}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_map}{Map}}\ map;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ controller;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}*\ lidar;\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_mapper_acca977a6536bc8bbb94415fa3ec845a7}{Mapper}}(\textcolor{keywordtype}{int}\ gridSizeX,\ \textcolor{keywordtype}{int}\ gridSizeY,\ \textcolor{keywordtype}{double}\ cellSize,\ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ controller,\ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}*\ lidar);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}{updateMap}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_mapper_a7c4f5937b6ad8a951e1f200424fdc794}{recordMap}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mapper_a9ef2cbbc2974919674740f2838faba7e}{showMap}}();}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAPPER\_H}}
+
+\end{DoxyCode}
