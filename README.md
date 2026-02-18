@@ -1,41 +1,99 @@
-Omni-Directional Robot Control System
+# Omni-Directional Robot Control System
 
-Project Overview
+## Project Overview
 
-This project implements an object-oriented control system for an omni-directional mobile robot using C++.
-The architecture is designed with abstraction and interface-based design principles to ensure scalability and modularity. The system simulates robot movement, navigation, and sensor interactions.
-Developed as part of an Object-Oriented Programming course.
+This project is an object-oriented C++ implementation of an omni-directional robot control system.  
+The system was designed using an interface-based architecture to ensure modularity, scalability, and hardware abstraction.
 
-🇹🇷 Proje Hakkında
+The project focuses on applying OOP principles such as abstraction, encapsulation, inheritance, and polymorphism in a robotics control environment.
 
-Bu proje, C++ kullanılarak geliştirilen nesne yönelimli (OOP) bir omni-directional mobil robot kontrol sistemidir.
-Sistem; soyutlama (abstraction), arayüz tabanlı mimari ve modüler tasarım prensipleri kullanılarak geliştirilmiştir. Robot hareketi, navigasyon ve sensör etkileşimleri simüle edilmektedir.
-Nesne Yönelimli Programlama dersi kapsamında geliştirilmiştir.
 
-#Technical Highlights
+## Architecture
+The system was redesigned in the second phase to follow a UML-based layered architecture.
+Key architectural components:
 
-C++
-Object-Oriented Programming
-Interface-based architecture
-Sensor abstraction (IR & Lidar)
-Modular system design
-Access control mechanism
-Navigation & mapping logic
+- **RobotController**
+- **RobotInterface (Abstract Class)**
+- **SensorInterface (Abstract Class)**
+- **FestoRobotInterface**
+- **IRSensor**
+- **LidarSensor**
+- **SafeNavigation**
+- **Mapper**
+- Supporting classes: `Point`, `Pose`, `Map`, `Record`, `RobotOperator`, `Encryption`
 
- 
-#Architecture Overview
-RobotController manages robot operations
-RobotInterface provides abstraction between controller and API
-SensorInterface abstracts sensor implementations
-SafeNavigation and Mapper operate via SensorInterface
-Access control is implemented using openAccess() / closeAccess()
-The architecture allows integration of new robot APIs without affecting existing system components.
+### Core Design Principles
+- Hardware abstraction using abstract interfaces  
+- Decoupling robot API from control logic  
+- Sensor management via dynamic sensor list  
+- Access control with password-based authorization  
+- Extensible design for future robot platforms  
 
-#Learning Outcomes
+## Features
+- Omni-directional motion control  
+- Interface-based robot API integration  
+- Centralized sensor update mechanism  
+- IR and Lidar sensor abstraction  
+- Secure access system (openAccess / closeAccess)  
+- Menu-driven console control system  
 
-Advanced class design
-Abstract class & interface usage
-Separation of concerns
-Writing scalable C++ architectures
+## Technologies Used
 
-Real-world OOP simulation
+- C++
+- Object-Oriented Programming
+- UML-based class design
+- Interface-based architecture
+- Robotics simulation environment
+
+---
+
+# Türkçe Açıklama
+
+## Genel Bakış
+
+Bu proje, her yöne hareket edebilen (omni-directional) bir robotun kontrol sistemi için nesne yönelimli C++ ile geliştirilmiş bir yazılımdır.  
+Sistem, modülerlik, ölçeklenebilirlik ve donanım soyutlaması sağlamak amacıyla arayüz (interface) tabanlı mimari kullanılarak tasarlanmıştır.
+
+Projede soyutlama, kapsülleme, kalıtım ve çok biçimlilik gibi OOP prensipleri uygulanmıştır.
+
+## Mimari
+
+İkinci aşamada sistem UML sınıf diyagramına göre yeniden yapılandırılmıştır.
+
+Temel bileşenler:
+
+- **RobotController**
+- **RobotInterface (Soyut Sınıf)**
+- **SensorInterface (Soyut Sınıf)**
+- **FestoRobotInterface**
+- **IRSensor**
+- **LidarSensor**
+- **SafeNavigation**
+- **Mapper**
+- Destek sınıfları: `Point`, `Pose`, `Map`, `Record`, `RobotOperator`, `Encryption`
+
+### Tasarım Yaklaşımı
+
+- Donanım soyutlaması için abstract arayüzler  
+- Robot API ile kontrol katmanının ayrıştırılması  
+- Sensörlerin dinamik liste yapısı ile yönetilmesi  
+- Şifre tabanlı erişim kontrol sistemi  
+- Yeni robot platformlarına açık genişletilebilir mimari  
+
+
+## Özellikler
+
+- Omni-directional hareket kontrolü  
+- Arayüz tabanlı robot API entegrasyonu  
+- Merkezi sensör güncelleme mekanizması  
+- IR ve Lidar sensör soyutlaması  
+- Güvenli erişim sistemi (openAccess / closeAccess)  
+- Menü tabanlı konsol uygulaması  
+
+## Kullanılan Teknolojiler
+
+- C++
+- Nesne Yönelimli Programlama
+- UML tabanlı sınıf tasarımı
+- Arayüz tabanlı yazılım mimarisi
+- Robotik simülasyon ortamı
